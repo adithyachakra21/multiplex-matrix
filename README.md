@@ -2,7 +2,7 @@
 
 Adithya here!
 
-You might ask: what does "multiplex-matrix" mean? This repository deals with my favorite branches of mathematics: linear algebra (matrices) and complex numbers (multiplex is a synonym of complex). Forgive me if the title is a bit of a stretch -- I couldn't resist the chance for a good alliteration!
+You might ask: what does "multiplex-matrix" mean? Glad you asked. This repository deals with my favorite branches of mathematics: linear algebra (matrices) and complex numbers (multiplex is a synonym of complex). Forgive me if the title is a bit of a stretch -- I couldn't resist the chance for a good alliteration!
 
 Here are the libraries I am currently working on:
 
