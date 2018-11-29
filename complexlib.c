@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 typedef struct {
    float real;
@@ -13,7 +14,7 @@ complex subtractComplex (complex x, complex y);
 complex multiplyComplex (complex x, complex y);
 float magnitudeComplex (complex x, float accuracy);
 int squareRootComplex (complex x, complex *output, float accuracy);
-
+complex powerComplex (complex x, float power, float accuracy);
 
 complex addComplex (complex x, complex y) {
    complex sum;
@@ -86,8 +87,7 @@ int squareRootComplex (complex x, complex *output, float accuracy) {
 
    else if (x.imag < 0) {
       delta = -1*squareRoot (((0.5*(-1*x.real)+mod)), accuracy);
-   }
-
+   } 
    output1.real = gamma;
    output1.imag = delta;
 
@@ -99,11 +99,24 @@ int squareRootComplex (complex x, complex *output, float accuracy) {
 
    return 0;
 }
+/* This implementation of De Moivre's Formula is returning Nan - it must be troubleshooted! 
+ *
+complex powerComplex (complex x, float power, float accuracy) {
+   complex output;
+   float a = x.real;
+   float b = x.imag;
+   float r = magnitudeComplex (x,accuracy);
 
-/*
+   output.real = r*cos(power*acos(a/2));
+   output.imag = r*sin(power*asin(b/2));
+
+   return output;
+}
+
+
 int main (void){
    
-   complex m[2];
+   complex m;
    complex a;
    complex b;
 
@@ -115,12 +128,14 @@ int main (void){
    b.real = 7;
    b.imag = 3;
 
-   r = squareRootComplex (a,m,0.001);
-   p = (m[0]).imag;
+   
+   m = powerComplex (a,2,0.01);
+   p = m.real;
 
-   printf ("Magnitude is %f\n", p);
+   printf ("Magnitude is %f\n", p); 
+ 
    return 0;
 }  
-*\
+*/
 
 
