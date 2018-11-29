@@ -6,7 +6,7 @@ You might ask: what does "multiplex-matrix" mean? Glad you asked. This repositor
 
 Here are the libraries I am currently working on:
 
-1. Python complex numbers library (complexlib.py). This features all basic functions (addition, subtraction, multiplication, division) as well as some more advanced concepts I'm learning this year: calculating the root of a complex number with de Moivre's Theorem, calculating a complex number when raised to large powers, and using Euler's Identity to calculate the rotation of a complex number from its a + bi form.
+1. Python complex numbers library (complexlib.py). This features all basic functions (addition, subtraction, multiplication, division) as well as some more advanced concepts I'm learning this year: calculating the root of a complex number with de Moivre's Theorem, calculating a complex number when raised to large powers (also with De Moivre's Theorem), and using Euler's Identity to calculate the rotation of a complex number from its a + bi form.
 
 2. C complex numbers library (complexlib.c) with all the above functions in C!
 
