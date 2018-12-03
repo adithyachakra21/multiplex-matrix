@@ -12,6 +12,6 @@ I'll be posting stuff onto here as I finish them. Here are the libraries I am cu
 
 3. Python matrix library (matrix.py). This features basic functions (addition, subtraction, division) and some more advanced concepts I'm learning this year: Gaussian Elimination of a matrix to Reduced Normal Form, using the Leibniz Formula to calculate the determinant of a n-by-n matrix, and calculating the curve of best-fit for a data set using a least squares approach. 
 
-(As a side note, you'll notice that I don't use the imported function for square root (e.g: math.sqrt in python). Instead, I use the Babylonian square root algorithm and make an "in-house" function. This is because the Babylonian algorithms allows the user to dictate the accuracy of their square root answer to be. It has always been my belief that programs should give the user as much control as possible over the data. Truth be told: I'm also naturally suspicious of imported functions and try avoiding them whenever possible.)
+(As a side note, you'll notice that I don't use the imported function for square root (e.g: math.sqrt in python). Instead, I use the Babylonian square root algorithm and make an "in-house" function. This is because the Babylonian algorithms allows the user to dictate the accuracy of their square root answer to be. It has always been my belief that programs should give the user as much control as possible over the data.)
 
 Hope you enjoy!
